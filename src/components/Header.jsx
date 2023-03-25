@@ -6,13 +6,13 @@ const Header = ({cart}) => {
    
   return (
    <div className='header'>
-    <span>YOur SHop</span>
+    <span>Your Shop</span>
     <ul className='nav'> 
 <li className='prod'>
     <Link to={"/"}>Home</Link>
 </li>
 <li className='prod1'>
-    <Link to={"/cart"}>Cart {cart.items.length>0 && <span>({cart.items.length})</span>}</Link>
+    <Link to={"/cart"}>My Cart {cart.items.length>0 && <span>({cart.items.length})</span>}</Link>
 </li>
     </ul>
    </div>
