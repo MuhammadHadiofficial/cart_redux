@@ -10,3 +10,5 @@ jobs:
     steps:
       - name: Echo Hello World!
         run: echo "hello world"
+      - uses: actions/checkout@v3
+      - run: ls
