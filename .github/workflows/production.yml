@@ -21,3 +21,9 @@ jobs:
         run: npm run build
       - name: Show files
         run: ls
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: AKIARPCHKOKOWWEFNZDL
+          aws-secret-access-key: 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
+          aws-region: us-east-1
