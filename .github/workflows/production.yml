@@ -1,0 +1,12 @@
+name: deploy_to_AWS_S3
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Hello World!
+        run: echo "hello world"
